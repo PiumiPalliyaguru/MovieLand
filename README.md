@@ -22,6 +22,8 @@ User Registration –
 	Request data type – User details (json)
 	Servlet URL - /Register
   
+  Functions(Search page)
+  
 Search movies by movie name
 Search movie by genre sort by rate / year
 Search movie by genre , rate sort by year
@@ -32,7 +34,9 @@ Sort all movies year or rate
 	Request data  – genre/rate/ keyword/sort type (json)
 	Servlet URL - /AdvanceSearch
 	Response data type – Movie data (json)
-  
+
+
+Functions(Details page)  
   Search unique movie details, Related Movies 
 
 	Method – HTTP POST
