@@ -1,0 +1,251 @@
+@charset "ISO-8859-1";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.basic-search{
+	float: right;
+	width: 0px;
+	height:60px;
+	background: #41484a;
+	text-align: center;
+	line-height:35px;
+	padding-right:50px;
+	padding-left: 25px;
+	border-radius:5px;
+	position: relative;
+	transition: all 0.5s ease;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.basic-search input{
+	border: 0;
+	border-bottom: 2px solid #fff;
+	background: transparent;
+	width: 85%;
+	padding: 5px 0;
+	outline: none;
+	color: #fff;
+	/* font-weight: bold; */
+	transition: all 0.5s ease;
+}
+
+.basic-search button{
+	background-color:#41484a;
+	border: none;
+	color: #fff;
+	position: absolute;
+	right: 25px;
+	top: 20px;
+	font-size: 25px;
+	//cursor: pointer;
+}
+
+.basic-search input::placeholder{
+	color: #fff;
+}
+
+/* when active class gets added using jquery */
+
+.basic-search.active{
+	width: 350px;
+	padding-left:25px;
+	transition: all 0.5s ease;
+}
+
+.input.active{
+	width: 85%;
+	padding-left: 5px;
+	transition: all 0.5s ease;
+}
+
+
+/* 
+slide show */
+
+
+#slider {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
+/* helper css, since we don't have images */
+.slide1 {background: red;}
+.slide2 {background: blue;}
+.slide3 {background: green;}
+.slide4 {background: purple;}
+.slide5 {background: pink;}
+
+
+/* css for login form and register form */
+
+/* Full-width input fields */
+ input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 4px;
+  display: inline-block;
+  border:  solid #ccc;
+  box-sizing: border-box;
+} 
+
+/* Set a style for all buttons */
+ button.nav-bar {
+  background-color: #808080;
+  color: #808080;
+  padding: 15px 15px;
+  margin: 5px;
+  border: none;
+   cursor: pointer;  
+  width: 25%;
+
+} 
+table td.nav{
+    background-color: #000000;
+}
+ table td.nav:hover{
+    background-color: #07001c;
+    border-radius: 8px;
+} 
+ button:hover {
+  opacity: 0.8;
+}
+
+/* table td a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+    border-radius: 10px;
+}
+ */
+
+ 
+/* .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #00ff00;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+ */
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ff0000;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+/*img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}*/
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
